@@ -226,10 +226,7 @@ def set_properties_from_json(object_with_properties,
 
         setattr(object_with_properties, prop_name, val)
 
-        #Simplify volume to pass serialization tests with vectorization transformation
-        # if prop_name == 'volume':
-        #     object_with_properties.volume = \
-        #          object_with_properties.volume.simplify()
+
 
     remaining_properties = source_properties - ignore_properties
     # Ignore all metadata "properties" saved for DIODE
